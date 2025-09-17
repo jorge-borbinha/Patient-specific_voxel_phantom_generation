@@ -13,7 +13,7 @@ Pipeline for patient-specific voxel phantom file generation
 - Time
 - [pynrrd](https://github.com/mhe/pynrrd)
 
-To download pyrrnd:
+To download pynrrd:
 
 ```
 pip install pynrrd
