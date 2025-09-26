@@ -27,7 +27,7 @@ pip install numpy
 
 And use analogous commands for the other libraries.
 
-It's possible to download pynrrd using pip or anaconda, via the following terminal commands:
+It's possible to install pynrrd using pip or anaconda, via the following terminal commands:
 
 ```
 pip install pynrrd
