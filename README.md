@@ -1,4 +1,4 @@
-# Pipeline for patient-specific voxel phantom file generation
+# Pipeline for generation of Patient-specific Voxel Phantom
 Pipeline for patient-specific voxel phantom file generation
 
 
