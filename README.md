@@ -6,7 +6,16 @@ Pipeline for patient-specific voxel phantom file generation
 
 
 ## Description
-
+This script orchestrates the entire process, including:
+1. Loading a segmented phantom labelmap from an NRRD file.
+2. Loading a corresponding organlist from a CSV file.
+3. Cropping the phantom to remove surrounding empty space.
+4. Optionally loading a CT NRRD file, converting its HU values to density, and calculating organ-specific statistics.
+5. Performing data integrity checks and creating phantom arrays based on average organ densities or per-voxel CT densities.
+6. Generating and saving 2D slice visualizations of the phantoms.
+7. Calculating Voxel Bounding Box (VBB) and Center of Mass (COM) for all organs.
+8. Optionally creating .vox files formatted for Monte Carlo simulations.
+9. Generating a comprehensive 'report.out' file with all calculated data tables.
 
 ## Dependencies/Prerequisites
 
