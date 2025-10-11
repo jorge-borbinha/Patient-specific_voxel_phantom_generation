@@ -81,6 +81,6 @@ By using this software, you acknowledge that you have read, understood, and agre
 ## License
 Copyright (C) 2025 Jorge Cebola Borbinha
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License Version 3 (AGPLv3) as published by the Free Software Foundation.
-See the GNU Affero General Public License for more details, available at: [AGPL v3 LICENSE](https://www.gnu.org/licenses/agpl-3.0.html)
+See the GNU Affero General Public License for more details, available at: [AGPL v3 LICENSE]([https://www.gnu.org/licenses/agpl-3.0.html](https://github.com/jorge-borbinha/Patient-specific_voxel_phantom_generation/blob/main/LICENSE.md))
 
 
