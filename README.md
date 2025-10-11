@@ -49,7 +49,7 @@ conda install conda-forge::pynrrd
 ```
 
 
-## Usage
+## Execution
 
 To get started, place the script and your input files in the same directory. Then, simply run the script from your terminal:
 
@@ -57,12 +57,13 @@ To get started, place the script and your input files in the same directory. The
 python nrrd_to_3d_pipeline.py
 ```
 
-The script will then guide you through a command-line interface, consisting of a series of interactive prompts, to gather all the necessary phantom information and file names.
+The script will then guide you through a highly user-friendly and configurable through the command-line interface, consisting of a series of interactive prompts. Most parameters, like file names and phantom dimensions, are provided during runtime.
 
+There are two output streams: terminal and file 'report.out'. There is info that is outputted to both streams. However, while the file 'report.out' is more for reporting results/calculations performed in the phantom, the terminal is more for reporting the progress of execution, if there are issues with data integrity, etc.
 
-## Execution
+During execution of the program, the execution time is prompted various times throughout the program, so the user can understand which steps of processing take more or less time.
 
-The script is highly user-friendly and configurable through the command-line interface. Most parameters, like file names and phantom dimensions, are provided during runtime
+When the user is prompted for a filename (or path if the file is not in the same durectory as the script), a default filename is provided. The default filename will only be used if the user leaves the input prompt blank.
 
 ## Example
 
