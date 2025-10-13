@@ -8,7 +8,7 @@ It processes a labelmap file where each integer value corresponds to a specific 
 
 This tool is designed for medical physicists, researchers, and students working with computational dosimetry and medical imaging.
 
-This script was [presented](resources/ICDA4_JB_FINAL.pdf) at the 4th International Conference on Dosimetry and its Applications - ICDA 2023 - and has been utilized in multiple research projects, contributing to advancements in medical physics and radiation dosimetry. 
+This script was [presented](https://github.com/jorge-borbinha/Patient-specific_voxel_phantom_generation/blob/main/resources/apr_ICDA4_JB_FINAL.pdf) at the [4th International Conference on Dosimetry and its Applications](https://icda-4.webs.upv.es/) - ICDA4 - and has been employed in multiple research projects, contributing to advancements in medical physics and radiation dosimetry. 
 
 
 ## Description
