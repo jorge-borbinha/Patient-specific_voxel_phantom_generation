@@ -68,10 +68,7 @@ conda install conda-forge::pynrrd
     * Indicate if you want to generate and save the 2D slice visualizations and provide a destination folder. This step may take some time, depending on the size of your phantom, because all 2D plots are generated and saved for the axial, sagittal and coronal planes.
     * Indicate if you want to create the final `.vox` files for simulation with the PENELOPE MC framework.
 
-__Notes:__
-- There are two output streams: terminal and file `report.out`. There is info that is outputted to both streams. However, while the file `report.out` is more for reporting results/calculations performed in the phantom, the terminal is more for reporting the progress of execution, if there are issues with data integrity, etc.
-
-- During execution of the program, the execution time is prompted various times throughout the program, so the user can understand which steps of processing take more or less time.
+__Note:__ During execution of the program, the execution time is prompted various times throughout the program, so the user can understand which steps of processing take more or less time.
 
 
 ## Usage & Configuration
@@ -109,7 +106,7 @@ Example of `organlist.csv`. Any CSV separator may be used in this file. An examp
 ### Output Files
 If a CT file and calibration curve are provided, `phantom_avgden.vox` and `phantom_ctden.vox` are created using personalized voxel densities calculated from the CT image. If no CT file/calibration curve are provided, reference density values from the ICRP (in `organlist.csv`) are used and only 'phantom_avgden.vox' will be generated. Furthermore, all the relevant statistics are calculated based on the ICRP reference densities provided by the user. The pipeline generates the following files in the same directory:
 
-* __`report.out`:__ A comprehensive text file with detailed explanations on program execution, tables for organ statistics, material properties, VBB, and COM.
+* __`report.out`:__ A comprehensive text file with detailed explanations on program execution, tables for organ statistics, material properties, VBB, and COM. There are two output streams: terminal and file `report.out`. There is info that is outputted to both streams. However, while the file `report.out` is more for reporting results/calculations performed in the phantom, the terminal is more for reporting the progress of execution, if there are issues with data integrity, etc.
 * __`phantom_avgden.vox`:__ The voxel phantom file ready for simulation with MC PENELOPE, using average organ densities. For each organ, the average density was calculated for all voxels comprising the organ. Then, the average density value was assigned to all voxels.
 * __`phantom_ctden.vox`:__ (Optional) The voxel phantom file using singular per-voxel densities from the CT scan.
 * __`phantom_plots/`:__ (Optional) A directory containing all the generated 2D slice visualizations, organized by phantom type and anatomical plane. The user can specify the path to save the 2D slice visualizations.
