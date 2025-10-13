@@ -27,8 +27,9 @@ The key features of the pipeline are:
 7. __Data Visualization__: Generates and saves 2D slice images of the phantom along all three anatomical planes (axial, sagittal, coronal) for visual verification.
 8. __Comprehensive Reporting___: Outputs a detailed `report.out` file containing detailed information and all calculated statistics in well-formatted tables.
 
-Axial slice of an example `.nrrd` segmented phantom labelmap.
-<img src="images/phantom_labelmap_axial_slice.png" alt="Example axial slice of a segmented phantom labelmap." width="300" />
+Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom.
+
+<img src="images/summary workflow.png" alt="Summary workflow of the python pipeline." width="900" />
 
 
 
@@ -80,6 +81,10 @@ The user should place the following input files in the same directory as the scr
     * A 3D NRRD file where each voxel has an integer value corresponding to an `Organ_ID`.
     * The is a variety of open surce and proprietary software for segmentation of medical images and generation of labelmaps in `.nrrd` format. The authors recommend the open source software [3D slicer](https://www.slicer.org/), particularly to new users, because it is powerful, user friendly and easy to use. However, many other softwares may be employed for this purpose, e.g. Image-J, ITK-Snap, MD.ai.
     * Default name: `phantom_labelmap.nrrd`
+ 
+Axial slice of an example `.nrrd` segmented phantom labelmap.
+
+<img src="images/phantom_labelmap_axial_slice.png" alt="Example axial slice of a segmented phantom labelmap." width="300" />
 
 * __Organlist (`.csv`)__
     * A CSV file that maps each organ/structure segmented (i.e `Organ_ID`) to its properties.
