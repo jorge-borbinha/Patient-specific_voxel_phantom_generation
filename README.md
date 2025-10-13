@@ -27,7 +27,7 @@ The key features of the pipeline are:
 7. __Data Visualization__: Generates and saves 2D slice images of the phantom along all three anatomical planes (axial, sagittal, coronal) for visual verification.
 8. __Comprehensive Reporting___: Outputs a detailed `report.out` file containing detailed information and all calculated statistics in well-formatted tables.
 
-<img src="images/summary_workflow.png" alt="Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom." width="900" />
+<img src="images/summary_workflow.png" alt="Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom." width="950" />
 
 
 
@@ -80,7 +80,7 @@ The user should place the following input files in the same directory as the scr
     * The is a variety of open surce and proprietary software for segmentation of medical images and generation of labelmaps in `.nrrd` format. The authors recommend the open source software [3D slicer](https://www.slicer.org/), particularly to new users, because it is powerful, user friendly and easy to use. However, many other softwares may be employed for this purpose, e.g. Image-J, ITK-Snap, MD.ai.
     * Default name: `phantom_labelmap.nrrd`
  
-Axial slice of an example `.nrrd` segmented phantom labelmap.
+Example axial slice of a `.nrrd` segmented phantom labelmap:
 
 <img src="images/phantom_labelmap_axial_slice.png" alt="Example axial slice of a segmented phantom labelmap." width="300" />
 
@@ -114,6 +114,10 @@ Example partial depiction of the file ´report.out´:
 
 <img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="800" />
 
+Example of the generated 2D slice visualizations/plots, for the phantom 'phantom_avgden':
+
+<img src="images/phantom_avg_plots.png" alt="Example of the generated 2D slice visualizations/plots" width="800" />
+
 ## Example
 
 1.  Place `pipeline_patient_specific_phantom_generation.py`, `phantom.nrrd`, `organlist.csv`, and `ct.nrrd` in a folder.
@@ -124,8 +128,6 @@ Example partial depiction of the file ´report.out´:
 6.  When asked to save plots, enter `y` and provide a path (e.g., `./`) or `n`. This may take some time.
 7.  When asked to create `.vox` files, enter `y`.
 8.  The script will execute the full pipeline and generate `report.out`, `phantom_avgden.vox`, `phantom_ctden.vox`, and a `phantom_plots` directory in your current folder.
-
-Image depicting the program running on the terminal:
 
 
 ## Disclaimer
