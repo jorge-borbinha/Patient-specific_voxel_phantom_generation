@@ -112,11 +112,11 @@ If a CT file and calibration curve are provided, `phantom_avgden.vox` and `phant
 
 Example partial depiction of the file ´report.out´:
 
-<img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="800" />
+<img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="1000" />
 
 Example of the generated 2D slice visualizations/plots, for the phantom 'phantom_avgden':
 
-<img src="images/phantom_avg_plots.jpg" alt="Example of the generated 2D slice visualizations/plots" width="800" />
+<img src="images/phantom_avg_plots.jpg" alt="Example of the generated 2D slice visualizations/plots" width="900" />
 
 ## Example
 
