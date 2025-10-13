@@ -1,10 +1,10 @@
 # Pipeline for generation of Patient-specific Voxel Phantom
-A Python pipeline for the analysis of segmented medical images (`.nrrd` labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms (`.vox` files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
+
+A Python pipeline for the analysis of segmented medical images (`.nrrd` labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms (`.vox` files) compatible with the PENELOPE Monte Carlo (MC) simulation framework.
 
 ## Introduction
-In medical physics and radiation dosimetry, accurate modeling of patient anatomy is crucial for computational radiation dosimetry employing MC simulations. This pipeline addresses the need for a streamlined, automated tool to convert segmented 3D medical images (in NRRD format) into patient-specific computational phantoms.
 
-It processes a labelmap file where each integer value corresponds to a specific organ or tissue, alongside an organ list and an optional CT scan. The primary output is a `.vox` file, ready for use in advanced dosimetry simulations with PENELOPE/penEasy, along with a comprehensive report and slice-by-slice visualizations.
+In medical physics and radiation dosimetry, accurate modeling of patient anatomy is crucial for computational radiation dosimetry employing MC simulations. This pipeline addresses the need for a streamlined, automated tool to convert segmented 3D medical images (in NRRD format) into patient-specific computational phantoms. It processes a labelmap file where each integer value corresponds to a specific organ or tissue, alongside an organ list and an optional CT scan. The primary output is a `.vox` file, ready for use in advanced dosimetry simulations, along with a comprehensive report and slice-by-slice visualizations.
 
 This tool is designed for medical physicists, researchers, and students working with computational dosimetry and medical imaging.
 
