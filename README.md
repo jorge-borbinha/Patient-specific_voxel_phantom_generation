@@ -104,7 +104,8 @@ If a CT file and calibration curve are provided, `phantom_avgden.vox` and `phant
 * __`phantom_plots/`:__ (Optional) A directory containing all the generated 2D slice visualizations, organized by phantom type and anatomical plane. The user can specify the path to save the 2D slice visualizations.
 
 Example partial depiction of the file ´report.out´:
-<img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="600" />
+
+<img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="800" />
 
 ## Example
 
