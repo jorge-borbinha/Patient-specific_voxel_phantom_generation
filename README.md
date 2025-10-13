@@ -27,9 +27,7 @@ The key features of the pipeline are:
 7. __Data Visualization__: Generates and saves 2D slice images of the phantom along all three anatomical planes (axial, sagittal, coronal) for visual verification.
 8. __Comprehensive Reporting___: Outputs a detailed `report.out` file containing detailed information and all calculated statistics in well-formatted tables.
 
-Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom.
-
-<img src="images/summary_workflow.png" alt="Summary workflow of the python pipeline." width="900" />
+<img src="images/summary_workflow.png" alt="Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom." width="900" />
 
 
 
