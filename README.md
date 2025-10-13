@@ -116,7 +116,7 @@ Example partial depiction of the file ´report.out´:
 
 Example of the generated 2D slice visualizations/plots, for the phantom 'phantom_avgden':
 
-<img src="images/phantom_avg_plots.png" alt="Example of the generated 2D slice visualizations/plots" width="800" />
+<img src="images/phantom_avg_plots.pdf" alt="Example of the generated 2D slice visualizations/plots" width="800" />
 
 ## Example
 
