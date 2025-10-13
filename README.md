@@ -29,7 +29,7 @@ The key features of the pipeline are:
 
 Summary workflow of the python Pipeline for generation of Patient-specific Voxel Phantom.
 
-<img src="images/summary workflow.png" alt="Summary workflow of the python pipeline." width="900" />
+<img src="images/summary_workflow.png" alt="Summary workflow of the python pipeline." width="900" />
 
 
 
