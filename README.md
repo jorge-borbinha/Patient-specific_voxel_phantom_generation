@@ -1,11 +1,30 @@
 # Pipeline for generation of Patient-specific Voxel Phantom
-Pipeline for patient-specific voxel phantom file generation
+A Python pipeline for the analysis of segmented medical images (`.nrrd` labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms (`.vox` files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
 
+## Introduction
+In medical physics and radiation dosimetry, accurate modeling of patient anatomy is crucial for computational radiation dosimetry employing MC simulations. This pipeline addresses the need for a streamlined, automated tool to convert segmented 3D medical images (in NRRD format) into patient-specific computational phantoms.
 
-## Contextualization
+It processes a labelmap file where each integer value corresponds to a specific organ or tissue, alongside an organ list and an optional CT scan. The primary output is a `.vox` file, ready for use in advanced dosimetry simulations with PENELOPE/penEasy, along with a comprehensive report and slice-by-slice visualizations.
 
+This tool is designed for medical physicists, researchers, and students working with computational dosimetry and medical imaging.
 
 ## Description
+The key features of the pipeline are:
+* **NRRD Processing**: Loads segmented phantom labelmaps and optional CT data from `.nrrd` files.
+* **Automatic Cropping**: Intelligently removes empty space (air) around the phantom to optimize phantom size and simulation speed.
+* **CT Data Integration**: Converts Hounsfield Units (HU) from a CT scan into mass density (g/cm³) using a user-provided calibration curve.
+* **Statistical Analysis**: Calculates key statistics for each organ, including volume, mass, mean/median density, Voxel Bounding Box (VBB), and Center of Mass (COM).
+* **Data Integrity Checks**: Includes several safeguards:
+    * Corrects negative densities that may arise from CT conversion.
+    * Replaces densities of organs with large deviations from ICRP reference values, preventing unrealistic data.
+    * Ensures consistency by setting air densities to ICRP reference values.
+* **Phantom Generation**: Creates two types of voxel phantoms:
+    1.  `phantom_avgden.vox`: A phantom where all voxels of an organ are assigned its average density.
+    2.  `phantom_ctden.vox`: A more detailed phantom where each voxel has a specific density derived from the CT scan (if provided).
+* **Visualization**: Generates and saves 2D slice images of the phantom along all three anatomical planes (Axial, Sagittal, Coronal) for visual verification.
+* **Comprehensive Reporting**: Outputs a detailed `report.out` file containing all calculated statistics in well-formatted tables.
+
+
 This script orchestrates the entire process, including:
 1. Loading a segmented phantom labelmap from an NRRD file.
 2. Loading a corresponding organlist from a CSV file.
