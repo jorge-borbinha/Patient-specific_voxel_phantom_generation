@@ -22,7 +22,7 @@ The key features of the pipeline are:
     * Replaces densities of organs with large deviations to ICRP reference values, preventing unrealistic data.
     * Ensures consistency by setting air densities to ICRP reference values.
 6. __Phantom Generation__: The pipeline creates two voxel phantoms:
-    *  `phantom_avgden.vox`: A phantom where all voxels of an organ are assigned its average density.
+    *  `phantom_avgden.vox`: A phantom where all voxels of an organ are assigned the organ's average density.
     *  `phantom_ctden.vox`: A more detailed phantom where each voxel has a specific density derived from the CT scan (if provided).
 7. __Data Visualization__: Generates and saves 2D slice images of the phantom along all three anatomical planes (axial, sagittal, coronal) for visual verification.
 8. __Comprehensive Reporting___: Outputs a detailed `report.out` file containing detailed information and all calculated statistics in well-formatted tables.
