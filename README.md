@@ -1,5 +1,5 @@
 # Pipeline for generation of Patient-specific Voxel Phantom
-A Python pipeline for the analysis of segmented medical images ('.nrrd' labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms ('.vox' files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
+A Python pipeline for the analysis of segmented medical images (`.nrrd` labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms ('.vox' files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
 
 ## Introduction
 In medical physics and radiation dosimetry, accurate modeling of patient anatomy is crucial for computational radiation dosimetry employing MC simulations. This pipeline addresses the need for a streamlined, automated tool to convert segmented 3D medical images (in NRRD format) into patient-specific computational phantoms.
