@@ -88,8 +88,6 @@ The user should place the following input files in the same directory as the scr
     * `Density_ICRP` corresponds to the reference density to be used for an organ/tissue/material, as defined by ICRP or other international commission/association.
     * Default name: `organlist.csv`
 
-Example of `organlist.csv`. Any CSV separator may be used in this file. An example of this file is provided in this repository.
-
 
 * __CT File (`.nrrd`)__
     * A 3D NRRD file containing the raw CT data in Hounsfield Units (HU). This file must be spatially registered with the phantom labelmap.
@@ -105,6 +103,8 @@ If a CT file and calibration curve are provided, `phantom_avgden.vox` and `phant
 * __`phantom_ctden.vox`:__ (Optional) The voxel phantom file using singular per-voxel densities from the CT scan.
 * __`phantom_plots/`:__ (Optional) A directory containing all the generated 2D slice visualizations, organized by phantom type and anatomical plane. The user can specify the path to save the 2D slice visualizations.
 
+Example partial depiction of the file ´report.out´:
+<img src="images/report_out.png" alt="Example partial depiction of the file report.out" width="600" />
 
 ## Example
 
