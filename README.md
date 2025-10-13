@@ -14,7 +14,7 @@ This tool is designed for medical physicists, researchers, and students working 
 The key features of the pipeline are:
 
 1. __NRRD Processing__: Loads segmented phantom labelmaps and optional CT data from `.nrrd` files. Although medical images may be segmented using a variety of open source and proprietary software, for this pipeline, [3D slicer](https://www.slicer.org/) was employed to segment the CT images and create a NRRD segmented labelmap.
-2. __Automatic Cropping__: Intelligently removes empty space (e.g. air, CT equipment, other foreign objects) around the phantom to optimize phantom size and simulation speed.
+2. __Automatic Cropping__: Automatically removes empty space (e.g. air, CT equipment, other foreign objects) around the phantom to optimize phantom size and simulation speed.
 3. __CT Data Integration__: Converts Hounsfield Units (HU) from a CT scan into mass density (g/cm³) using a user-provided CT calibration curve.
 4. __Statistical Analysis__: Calculates key statistics for each organ, including volume, mass, mean/median density, Voxel Bounding Box (VBB), and Center of Mass (COM), in accordance with the International Commission on Radiation Protection (ICRP) standard format.
 5. __Data Integrity Checks__: Includes several safeguards:
