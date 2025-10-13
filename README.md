@@ -1,5 +1,5 @@
 # Pipeline for generation of Patient-specific Voxel Phantom
-A Python pipeline for the analysis of segmented medical images (`.nrrd` labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms (`.vox` files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
+A Python pipeline for the analysis of segmented medical images ('.nrrd' labelmaps). This pipeline performs statistical analysis, generates 2D slice visualizations, and converts the data into patient-specific voxel phantoms ('.vox' files) compatible with the PENELOPE/penEasy Monte Carlo (MC) simulation framework.
 
 ## Introduction
 In medical physics and radiation dosimetry, accurate modeling of patient anatomy is crucial for computational radiation dosimetry employing MC simulations. This pipeline addresses the need for a streamlined, automated tool to convert segmented 3D medical images (in NRRD format) into patient-specific computational phantoms.
@@ -12,7 +12,8 @@ This tool is designed for medical physicists, researchers, and students working 
 ## Description
 
 The key features of the pipeline are:
-1. __NRRD Processing__: Loads segmented phantom labelmaps and optional CT data from `.nrrd` files. Although medical images may be segmented using a variety of open source and proprietary software, for this pipeline, [3D slicer](https://www.slicer.org/) was employed to segment the CT images and create a NRRD segmented labelmap.
+
+1. __NRRD Processing__: Loads segmented phantom labelmaps and optional CT data from '.nrrd' files. Although medical images may be segmented using a variety of open source and proprietary software, for this pipeline, [3D slicer](https://www.slicer.org/) was employed to segment the CT images and create a NRRD segmented labelmap.
 2. __Automatic Cropping__: Intelligently removes empty space (e.g. air, CT equipment, other foreign objects) around the phantom to optimize phantom size and simulation speed.
 3. __CT Data Integration__: Converts Hounsfield Units (HU) from a CT scan into mass density (g/cm³) using a user-provided CT calibration curve.
 4. __Statistical Analysis__: Calculates key statistics for each organ, including volume, mass, mean/median density, Voxel Bounding Box (VBB), and Center of Mass (COM), in accordance with the International Commission on Radiation Protection (ICRP) standard format.
@@ -30,7 +31,7 @@ The key features of the pipeline are:
 ## Prerequisites
 
 To run this pipeline, you'll need Python 3.x, as well as the following libraries, which are included with the anaconda distribution, except for pynrrd.
-- Numpy, Pandas, Matplotlib, Tabulate, Time, [pynrrd](https://github.com/mhe/pynrrd)
+- numpy, pandas, matplotlib, tabulate, time, [pynrrd](https://github.com/mhe/pynrrd)
 
 You can also install the dependencies using pip, via the terminal command:
 
