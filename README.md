@@ -41,13 +41,7 @@ pip install numpy pandas tabulate matplotlib scipy pynrrd
 
 And use analogous commands for the other libraries.
 
-It's possible to install pynrrd using pip or anaconda, via the following terminal commands:
-
-```
-pip install pynrrd
-```
-
-or 
+It's possible to install pynrrd using anaconda, via the following terminal commands:
 
 ```
 conda install conda-forge::pynrrd
