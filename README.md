@@ -27,6 +27,10 @@ The key features of the pipeline are:
 7. __Data Visualization__: Generates and saves 2D slice images of the phantom along all three anatomical planes (axial, sagittal, coronal) for visual verification.
 8. __Comprehensive Reporting___: Outputs a detailed `report.out` file containing detailed information and all calculated statistics in well-formatted tables.
 
+Axial slice of an example `.nrrd` segmented phantom labelmap.
+<img src="images/phantom_labelmap_axial_slice.png" alt="Example axial slice of a segmented phantom labelmap." width="300" />
+
+
 
 ## Prerequisites
 
