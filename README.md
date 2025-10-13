@@ -8,6 +8,8 @@ It processes a labelmap file where each integer value corresponds to a specific 
 
 This tool is designed for medical physicists, researchers, and students working with computational dosimetry and medical imaging.
 
+This script was [presented](resources/ICDA4_JB_FINAL.pdf) at the 4th International Conference on Dosimetry and its Applications - ICDA 2023 - and has been utilized in multiple research projects, contributing to advancements in medical physics and radiation dosimetry. 
+
 
 ## Description
 
