@@ -12,16 +12,15 @@
 # Copyright (C) 2025 Jorge Cebola Borbinha
 #
 # This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License v3 (AGPLv3) as 
-# published by the Free Software Foundation.
+# it under the terms of the Mozilla Public License 2.0
 #
-# For more information, see https://www.gnu.org/licenses/agpl-3.0.html
+# For more information, see https://www.mozilla.org/en-US/MPL/2.0/
 #
 # This software is for educational and research purposes only. The user is 
 # solely responsible for ensuring data privacy and must de-identify all patient
 # data before use. The authors provide this software "as is" without any
 # warranty. By using this software, you agree to these terms.
-
+#
 
 import numpy as np
 import pandas as pd
